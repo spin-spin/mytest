@@ -13,3 +13,9 @@
 Спасибо, делаю это впервые ))
 18:22 разобрался с git , нашел 64 бит машину для установки докера
 18:57 installed docker for Kubuntu
+
+For ubuntufamilu
+
+sudo update
+sudo apt install git
+git clone https://github.com/spin-spin/mytest.git
