@@ -74,6 +74,7 @@ GRANT ALL PRIVILEGES ON test.* TO 'ut'@'localhost'; #// предоставить
 FLUSH PRIVILEGES;
 Клонируем репозиторий себе на ПК
 git clone https://github.com/spin-spin/mytest.git
+<<<<<<< HEAD
 // заходим в каталог репозитория 
 cd ~/mytest/
 #// загружаем дамп в базу
@@ -84,3 +85,13 @@ select*from userlink; #// проверяем содержимое таблицы
 quit
 ===========================================================================
 
+=======
+
+Считаем сам докер уже установлен
+Загружаем образ докера как указано на офф сайте mysql
+docker pull mysql/mysql-server
+Просматриваем доступные образы
+docker images
+Запускаем контейнер указав пароль рута=123 и версию sql=5.6
+docker run --name my-container-name -e MYSQL_ROOT_PASSWORD=123 -d mysql/mysql-server:5.6
+>>>>>>> aa6b232c002a1a34b46fddd812b74a9966f22b47
