@@ -19,3 +19,11 @@ For ubuntufamilu
 sudo update
 sudo apt install git
 git clone https://github.com/spin-spin/mytest.git
+
+Считаем сам докер уже установлен
+Загружаем образ докера как указано на офф сайте mysql
+docker pull mysql/mysql-server
+Просматриваем доступные образы
+docker images
+Запускаем контейнер указав пароль рута=123 и версию sql=5.6
+docker run --name my-container-name -e MYSQL_ROOT_PASSWORD=123 -d mysql/mysql-server:5.6
